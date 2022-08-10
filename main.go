@@ -9,6 +9,11 @@ import (
 	"time"
 )
 
+// This code purpose to learning context by practice
+// Usually context carries deadlines, cancellation signals, and other request-scoped
+// but in this learning i will try to make a deadline behaviour in context
+//
+// For more behavior, will add later
 func main() {
 	ctx := context.Background()
 	ctx, cancel := context.WithTimeout(ctx, time.Duration(time.Millisecond*2000))
